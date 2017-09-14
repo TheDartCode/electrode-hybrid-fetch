@@ -1,5 +1,3 @@
-const {fetch} = require('fetch-ponyfill')();
-
 export default (url) => {
   let statusCode;
   return fetch(url)

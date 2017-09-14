@@ -2,9 +2,6 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var _require = require('fetch-ponyfill')();
-var fetch = _require.fetch;
-
 var fetch$1 = (function (url) {
   var statusCode = void 0;
   return fetch(url).then(function (response) {
@@ -37,6 +34,6 @@ var ssrFetch = (function (url) {
   });
 });
 
-exports.fetch = fetch$1;
+exports.regularFetch = fetch$1;
 exports.ssrFetch = ssrFetch;
 exports.setServer = setServer;
